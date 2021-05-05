@@ -1,0 +1,7 @@
+
+@import '../../base/css/partial/mixins';
+
+p {
+    background-color: white;
+    @include my-mix;
+}

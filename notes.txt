@@ -1,0 +1,26 @@
+project/client/dest/deploy - all css,js = /static/ - created by collectstatic
+project/client/dest/static - minified and bundled js and css - created by grunt tasks
+project/client/dest/templates - minified html created by grunt tasks
+
+project/client/src/template - development html, will be minified by grunt and copyed to project/client/dest/templates
+project/client/src/<dir>/*.css - development css, will be minified by grunt and copyed to project/client/dest/static/css
+project/client/src/<dir>/*.js - development js, will be minified by grunt and copyed to project/client/dest/static/js
+
+
+project/client/build - build file, bundled but unminified css and js file (created by grunt watch to grunt command)
+project/client/dest/templates - minified html by grunt
+project/client/dest/static - minified and bundled css and js file created by grunt
+
+
+
+on setup:
+npm install
+python3 -m venv env
+env/scripts/activate
+pip install -r requierment
+
+
+when develop run:
+grunt watch
+python manage.py livereload
+python manage.py runserver
